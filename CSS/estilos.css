@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:#1d1d1d;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    color:#e63946;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.logo img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#e63946;
+}
+
+.hero{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:65px;
+}
+
+.hero-content p{
+    margin:20px 0;
+    font-size:22px;
+}
+
+.btn{
+    background:#e63946;
+    color:white;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:10px;
+}
+
+.beneficios{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:60px;
+}
+
+.beneficio{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    width:250px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.beneficio i{
+    font-size:45px;
+    color:#e63946;
+    margin-bottom:20px;
+}
+
+.productos{
+    padding:60px;
+}
+
+.productos h1{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    width:320px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.contenido{
+    padding:20px;
+}
+
+.contenido h2{
+    color:#e63946;
+    margin:20px 0;
+}
+
+.contenido button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#e63946;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+footer{
+    background:#1d1d1d;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
