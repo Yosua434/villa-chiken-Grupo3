@@ -11,6 +11,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
+    padding:20px;
 }
 
 .login-card{
@@ -57,4 +58,49 @@ button{
     color:white;
     border-radius:10px;
     cursor:pointer;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablets */
+@media screen and (max-width: 768px){
+
+    .login-card{
+        width:90%;
+        padding:40px;
+    }
+
+}
+
+/* Celulares */
+@media screen and (max-width: 480px){
+
+    body{
+        padding:15px;
+        align-items:center;
+    }
+
+    .login-card{
+        width:100%;
+        padding:30px 20px;
+        border-radius:15px;
+    }
+
+    .icono{
+        font-size:40px;
+    }
+
+    .input-group{
+        padding:12px;
+    }
+
+    .input-group input{
+        font-size:14px;
+    }
+
+    button{
+        padding:14px;
+        font-size:15px;
+    }
+
 }
