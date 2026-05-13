@@ -66,6 +66,7 @@ nav a:hover{
     position:relative;
     color:white;
     text-align:center;
+    padding:20px;
 }
 
 .hero-content h1{
@@ -165,4 +166,117 @@ footer{
     color:white;
     text-align:center;
     padding:20px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablets */
+@media screen and (max-width: 900px){
+
+    header{
+        padding:20px;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    nav a{
+        margin-left:0;
+    }
+
+    .hero-content h1{
+        font-size:45px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .beneficios{
+        flex-wrap:wrap;
+        padding:40px 20px;
+    }
+
+    .cards{
+        flex-wrap:wrap;
+    }
+
+}
+
+/* Celulares */
+@media screen and (max-width: 600px){
+
+    .logo{
+        font-size:22px;
+        gap:10px;
+    }
+
+    .logo img{
+        width:50px;
+        height:50px;
+    }
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .hero{
+        height:75vh;
+        padding:20px;
+    }
+
+    .hero-content h1{
+        font-size:34px;
+    }
+
+    .hero-content p{
+        font-size:16px;
+    }
+
+    .btn{
+        display:inline-block;
+        padding:12px 25px;
+        font-size:14px;
+    }
+
+    .beneficios{
+        flex-direction:column;
+        align-items:center;
+        gap:25px;
+    }
+
+    .beneficio{
+        width:100%;
+        max-width:320px;
+    }
+
+    .productos{
+        padding:40px 20px;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:100%;
+        max-width:320px;
+    }
+
+    .card img{
+        height:200px;
+    }
+
+    footer{
+        font-size:14px;
+    }
+
 }
