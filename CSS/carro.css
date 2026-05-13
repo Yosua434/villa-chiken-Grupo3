@@ -12,6 +12,9 @@ body{
 header{
     background:#1d1d1d;
     padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .logo{
@@ -28,6 +31,29 @@ header{
     height:60px;
     border-radius:50%;
     object-fit:cover;
+}
+
+/* ===== NAVBAR ===== */
+
+nav{
+    display:flex;
+    align-items:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    transition:0.3s;
+    font-size:16px;
+}
+
+nav a:hover{
+    color:#e63946;
+}
+
+nav a i{
+    margin-right:6px;
 }
 
 .contenedor-carrito{
@@ -96,8 +122,25 @@ header{
     cursor:pointer;
 }
 
+/* ===== RESPONSIVE ===== */
 
 @media screen and (max-width: 900px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    nav a{
+        margin-left:0;
+    }
 
     .contenedor-carrito{
         flex-direction:column;
@@ -126,6 +169,12 @@ header{
     .logo img{
         width:50px;
         height:50px;
+    }
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+        gap:12px;
     }
 
     .contenedor-carrito{
